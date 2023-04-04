@@ -10,6 +10,10 @@ function romeuJulieta(num) {
    else if(num % 5  === 0) {
     return 'goiabada'
    }
+
+   else {
+    return 'O valor recebido não é divisível por 3 e nem por 5'
+   }
 }
 
 module.exports = romeuJulieta;

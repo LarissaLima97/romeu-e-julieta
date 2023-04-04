@@ -11,3 +11,7 @@ test('Verifica se 5 retorna goiabada', () => {
 test('Verifica se 15 retorna romeu e julieta', () => {
     expect(romeuJulieta(15)).toBe('Romeu e Julieta');
 });
+
+test('Verifica se 11 retorna erro', () => {
+    expect(romeuJulieta(11)).toBe('O valor recebido não é divisível por 3 e nem por 5');
+});
