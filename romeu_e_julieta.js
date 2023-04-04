@@ -1,5 +1,10 @@
 function romeuJulieta(num) {
-   if( num % 3 === 0 && num % 5 === 0) {
+
+    if(typeof num !== 'number') {
+        return 'Valor recebido não é um número'
+    }
+
+   else if( num % 3 === 0 && num % 5 === 0) {
     return 'Romeu e Julieta'
    }
 

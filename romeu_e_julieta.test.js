@@ -15,3 +15,7 @@ test('Verifica se 15 retorna romeu e julieta', () => {
 test('Verifica se 11 retorna erro', () => {
     expect(romeuJulieta(11)).toBe('O valor recebido não é divisível por 3 e nem por 5');
 });
+
+test('Verifica se valor recebido é um número', () => {
+    expect(romeuJulieta(true)).toBe('Valor recebido não é um número');
+});
